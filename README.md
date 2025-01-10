@@ -37,7 +37,14 @@ $ npm install
 
 ```
 
-### 4. Rodando a Aplicação
+### 4. Populando o JSON
+Caso queira deixar o arquivo JSON populado com dados ficticios, execute o comando:
+
+``` bash
+$ node ./db/populate-data.js
+```
+
+### 5. Rodando a Aplicação
 Após instalar as dependências, execute o comando abaixo para rodar a aplicação:
 
 ``` bash
@@ -45,6 +52,8 @@ $ node index.js
 ```
 
 Isso iniciará a aplicação e você verá o menu interativo no terminal, onde poderá escolher entre as opções para cadastrar, listar, buscar, atualizar ou remover produtos.
+
+
 
 ## 👩‍💻 Estrutura do Código
 * **index.js**: Arquivo principal onde a lógica do menu e das operações é implementada.
