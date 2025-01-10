@@ -7,7 +7,7 @@ const filePath = path.resolve('db', 'data.json');
 // Função para ler o arquivo JSON
 export function readFile() {
   if (!fs.existsSync(filePath)) {
-    fs.writeFileSync(filePath, JSON.stringify({ categories: [], products: [] }, null, 2));
+    fs.writeFileSync(filePath, JSON.stringify({ products: [] }, null, 2));
   }
   const data = fs.readFileSync(filePath, 'utf-8');
   return JSON.parse(data);

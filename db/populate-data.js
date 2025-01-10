@@ -1,7 +1,15 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
+import { readFile } from '../services/data-manager.js';
 
 const filePath = path.resolve('db', 'data.json');
+
+const verifyIfDataAlredyExists = readFile();
+
+if (verifyIfDataAlredyExists.products.length > 0) {
+  console.log('Já existem dados no arquivo data.json');
+  process.exit(1);
+}
 
 const products = [
   { id: 1, name: 'Smartphone', price: 1999.99, quantity: 10, category: 'Eletrônicos'},
