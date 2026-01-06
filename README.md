@@ -1,4 +1,4 @@
-## 🥤🛒 Gerenciador de Produtos
+## 🥤🛒 Gerenciador de Produtos para a Loja AgilStore
 Este é um gerenciador de produtos simples, onde é possível cadastrar, listar, buscar, atualizar e remover produtos. A aplicação utiliza Node.js, inquirer para interação via terminal, e métodos de manipulação de dados para gerenciar as informações dos produtos.
 
 ## 📱 Funcionalidades
