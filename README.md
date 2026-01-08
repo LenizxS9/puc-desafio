@@ -1,58 +1,44 @@
 ## 🥤🛒 Gerenciador de Produtos para a Loja AgilStore
-Este é um gerenciador de produtos simples, onde é possível cadastrar, listar, buscar, atualizar e remover produtos. A aplicação utiliza Node.js, inquirer para interação via terminal, e métodos de manipulação de dados para gerenciar as informações dos produtos.
+
+Aplicação CLI (terminal) para gerenciar produtos (CRUD): cadastrar, listar, buscar, atualizar e remover.  
+Os dados são persistidos em um arquivo JSON (`db/data.json`).
+
+---
 
 ## 📱 Funcionalidades
-* Cadastrar Produto: Permite adicionar novos produtos ao sistema.
-* Listar Produtos: Exibe todos os produtos cadastrados, com a opção de ordenar por nome, preço ou quantidade.
-* Buscar Produto: Permite encontrar um produto pelo seu ID ou nome (com busca insensível a maiúsculas/minúsculas).
-* Atualizar Produto: Permite atualizar os dados de um produto existente, escolhendo qual campo (nome, preço ou quantidade) deseja modificar.
-* Remover Produto: Permite excluir um produto pelo seu ID.
 
+- **Cadastrar Produto:** adiciona um novo produto (nome, categoria, preço e quantidade).
+- **Listar Produtos:** exibe todos os produtos com opção de ordenação por nome, preço ou quantidade.
+- **Buscar Produto:** encontra um produto por ID ou nome (busca insensível a maiúsculas/minúsculas).
+- **Atualizar Produto:** permite atualizar nome, preço e/ou quantidade.
+- **Remover Produto:** remove um produto pelo ID.
+- **Persistência em JSON:** mantém os dados entre execuções.
+
+---
 
 ## 🧰 Tecnologias Utilizadas
-* Node.js (v20.16.0): Ambiente de execução JavaScript.
-* Inquirer (v12.3.0): Biblioteca para interação com o usuário via terminal.
-* JavaScript: Linguagem de programação.
 
-## 🧩 Como Rodar a Aplicação
+- **Node.js** (v20.16.0)
+- **Inquirer** (v12.3.0)
+- **JavaScript (ES Modules)**
 
-### 1. Requisitos
-Antes de começar, verifique se você possui o Node.js (v20.16.0) instalado. Se não, você pode baixar e instalar a partir do site oficial: Node.js.
+---
 
-### 2. Clonando o Repositório
-Primeiro, clone o repositório para sua máquina local:
+## 🧩 Instalação, População e Execução
 
-``` bash
-# Clone o repositório.
-$ git clone -b main https://github.com/LenizxS9/puc-desafio.git
-```
+```bash
+# Clonar o repositório
+git clone -b main https://github.com/LenizxS9/puc-desafio.git
+cd puc-desafio
 
-### 3. Instalando as Dependências
-Acesse o diretório do projeto e instale as dependências necessárias com o npm:
+# Instalar dependências
+npm install
 
-``` bash
-# Entre no diretório e instale as dependências.
-$ cd ./puc-desafio
-$ npm install
+# (Opcional) Popular o JSON com dados fictícios
+node ./db/populate-data.js
 
-```
-
-### 4. Populando o JSON
-Caso queira deixar o arquivo JSON populado com dados ficticios, execute o comando:
-
-``` bash
-$ node ./db/populate-data.js
-```
-
-### 5. Rodando a Aplicação
-Após instalar as dependências, execute o comando abaixo para rodar a aplicação:
-
-``` bash
-$ node index.js
-```
-
-Isso iniciará a aplicação e você verá o menu interativo no terminal, onde poderá escolher entre as opções para cadastrar, listar, buscar, atualizar ou remover produtos.
-
+# Rodar a aplicação
+npm start
 
 
 ## 👩‍💻 Estrutura do Código
